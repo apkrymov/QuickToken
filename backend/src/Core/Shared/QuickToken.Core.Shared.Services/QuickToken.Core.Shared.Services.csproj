@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Database\QuickToken.Database\QuickToken.Database.csproj" />
+      <ProjectReference Include="..\QuickToken.Core.Shared.Contracts\QuickToken.Core.Shared.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>

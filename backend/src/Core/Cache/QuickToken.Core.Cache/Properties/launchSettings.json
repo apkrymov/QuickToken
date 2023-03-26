@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "QuickToken.Core.Cache": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

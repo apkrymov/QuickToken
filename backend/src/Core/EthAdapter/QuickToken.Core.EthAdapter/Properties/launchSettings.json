@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "QuickToken.Core.EthAdapter": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

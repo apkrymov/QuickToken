@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Database\QuickToken.Database\QuickToken.Database.csproj" />
+      <ProjectReference Include="..\..\..\Shared\QuickToken.Shared.Worker\QuickToken.Shared.Worker.csproj" />
+      <ProjectReference Include="..\QuickToken.Core.EthAdapter.Domain\QuickToken.Core.EthAdapter.Domain.csproj" />
+    </ItemGroup>
+</Project>

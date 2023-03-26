@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="11.1.0" />
+      <PackageReference Include="MediatR.Extensions.Autofac.DependencyInjection" Version="9.2.0" />
+      <PackageReference Include="Nethereum.Web3" Version="4.12.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Shared\QuickToken.Shared\QuickToken.Shared.csproj" />
+      <ProjectReference Include="..\..\Shared\QuickToken.Core.Shared.Contracts\QuickToken.Core.Shared.Contracts.csproj" />
+      <ProjectReference Include="..\QuickToken.Core.EthAdapter.Contracts\QuickToken.Core.EthAdapter.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>

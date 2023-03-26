@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Shared\QuickToken.Shared.Web\QuickToken.Shared.Web.csproj" />
+      <ProjectReference Include="..\QuickToken.Facade.Contracts\QuickToken.Facade.Contracts.csproj" />
+      <ProjectReference Include="..\QuickToken.Facade.Domain\QuickToken.Facade.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
